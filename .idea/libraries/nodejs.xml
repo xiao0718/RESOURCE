@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="nodejs" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="Node.js Core Modules" />
+      <option name="frameworkVersion" value="10.16.0" />
+      <sourceFilesUrls>
+        <item url="file://E:/nvm/v10.16.0/node_modules/npm/node_modules" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://E:/nvm/v10.16.0/node_modules/npm/node_modules" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
