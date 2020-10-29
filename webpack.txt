@@ -1,0 +1,74 @@
+ webpack
+ 
+ 入口：entry.js文件
+ 
+ 输出：输出路径及文件名
+ 
+ loader:对相对应的文件使用相对应的规则，将webpack不能处理的文件转化为webpack可处理的文件
+ 
+ 插件：赋予了webpack无限拓展的能力  plugins  
+ 
+ 模式/兼容性
+ 
+ 
+ 
+ webpack的安装
+ （第一种）
+ 
+ 1.创建一个新文件夹
+ 
+ 2.用编辑器打开，运行指令 npm init -y  全部使用默认选项进行一个快速创建nodejs项目 形成package.json文件
+ 
+ 3.npm install webpack webpack-cli -D  安装开发模式下的依赖（局部安装）
+ 
+ 
+ （第二种）
+ 
+1. npm install webpack -g 全局安装webpack&webpack-cli
+
+
+webpack的使用
+
+./node_modules/.bin/webpack &  npx webpack & npm run （在package.json文件的scripts中定义webpack指令）
+
+
+入口与输出
+
+关键词 entry&output  
+webpack配置文件webpack.config.js
+
+node路径相关：path模块的使用
+使用require进行引入，webstorm配置node core
+
+output的path需要使用绝对路径
+path.join去拼接路径，nodejs全局变量__dirname (nvm需定位到当前使用版本的npm的node moudle)
+
+
+
+loaders与插件
+
+关键词 loaders、plugins
+test去匹配文件、loader 倒序加载流水线处理
+
+plugin的使用，热模块替换
+安装plugin的以来，在plugins属性中new一个plugin
+
+webpack-dev-server
+引用HMR(HotModulesReplace)插件，修改js的时候，自动刷新页面
+
+
+
+webpack 应用总结
+
+核心概念
+入口、输出、loader、插件、模式/兼容性
+
+开发与生产模式中，按需配置
+开发中使用热更新，生产模式中使用压缩插件
+
+babel配置
+配置文件，polyfile
+
+
+
+
